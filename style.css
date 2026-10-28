@@ -114,11 +114,15 @@ body[data-route="about"]{overflow:hidden}body[data-route="about"] .about-lab-fra
 .home-art{object-position:right center}
 .home-copy{top:calc(50% - 109px)}
 .scene.knots{zoom:1;width:100%;height:100svh;min-height:0}
-.knots .page-heading{top:calc(154px * var(--card-scale));left:0;right:0;zoom:1}
+.knots .page-heading{top:calc(100svh - 780px * var(--card-scale));left:0;right:0;zoom:1}
 .knots .page-heading h1{font-size:calc(39px * var(--card-scale))}
 .knots .page-heading p{font-size:calc(19.95px * var(--card-scale));margin-top:calc(16px * var(--card-scale))}
-.knots .cards{zoom:var(--card-scale);width:1326px;left:50%;right:auto;transform:translateX(-50%);top:auto;bottom:-212px;gap:30px}
-.knots .knot-card{height:650px}
+.knots .cards{zoom:var(--card-scale);width:1326px;left:50%;right:auto;transform:translateX(-50%);top:auto;bottom:36px;gap:30px}
+.knots .knot-card{height:540px;border-radius:26px;border-bottom:1px solid #555}
+.knots .knot-card h2{margin-top:42px}
+.knots .card-art{top:185px;height:330px}
+.knots .card-art.gok,.knots .card-art.dan{top:112px;height:440px;width:165%;left:-32.5%}
+.knots .knot-card:hover,.knots .knot-card:focus-visible{border-bottom-color:var(--accent)}
 .detail-copy{top:calc(50% - 239px)}
 .detail-art{top:calc(50% - 335px)}
 .offering .page-heading{top:calc(50% - 129px)}
@@ -134,3 +138,6 @@ body[data-route="about"]{overflow:hidden}body[data-route="about"] .about-lab-fra
 .offered-wish{top:calc(50% - 12px)}
 }
 @media(max-width:760px){.home-art{object-position:right center}}
+
+/* Slightly reduce only the Gok selection image, preserving its center. */
+.knots .card-art.gok{transform:scale(.95);transform-origin:center center}
