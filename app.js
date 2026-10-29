@@ -37,7 +37,7 @@ function render(){
  if(route==='home'){
   main.innerHTML='<section class="scene home"><video class="home-art" src="assets/home-main02.mp4" autoplay muted loop playsinline preload="auto" aria-hidden="true"></video><div class="home-copy"><h1>요즘, 잘 풀리지 않는<br>일이 있습니까?</h1><p>당신을 옭아매던 꼬인 결들.<br>신명원은 끊기고, 이어지지 않는 마음의 결을 들여다봅니다.</p></div></section>';
  }else if(route==='about'){
-  main.innerHTML='<iframe class="about-lab-frame" allow="autoplay" src="about-story/index.html?v=v4-video-3" title="신명원 시스템 — 일곱 이야기"></iframe>';
+  main.innerHTML='<iframe class="about-lab-frame" allow="autoplay" src="about-story/index.html?v=v4-type-1" title="신명원 시스템 — 일곱 이야기"></iframe>';
  }else if(route==='knots'||route==='knot-types'){
   const tag={nan:'단단히 엉켜<br>풀리지 않는 흐름',jeol:'닿으려 할수록<br>꺾여 나가는 흐름',gok:'감길수록 더 깊이<br>죄어드는 흐름',dan:'이어지던 것이 끊겨<br>맺히지 못하는 흐름'};
   main.innerHTML=`<section class="scene knots">${heading('풀리지 않는 마음에도 저마다 다른 결이 있습니다','당신의 어려움을 골라주세요')}<div class="cards">${knots.map(k=>`<a class="knot-card ${k.key}" href="#knot/${k.key}"><h2>${k.name}</h2><p>${tag[k.key]}</p><img class="card-art ${k.key}" src="assets/${k.key}.png" alt="${k.name} 조형"></a>`).join('')}</div></section>`;

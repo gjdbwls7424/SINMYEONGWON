@@ -40,3 +40,11 @@
 .detail-card,.detail-tabs,.detail-hint,.system-inspect>.explore{z-index:2}
 #detail-crop{position:relative;inset:auto;display:block}
 .detail-image span{z-index:2}
+
+/* Exhibition readability: auxiliary text stays below 13px body copy. */
+@media(min-width:701px){
+.eyebrow,footer,.system-steps b,.morph-status,.detail-hint{font-size:12.5px}
+.principles span,.data-labels small,.source small,.system-inspect small,.detail-image span{font-size:12px}
+.source p,.detail-card .detail-number{font-size:12.5px}
+.reading-window text{font-size:12px}
+}

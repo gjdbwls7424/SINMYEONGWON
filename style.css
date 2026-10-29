@@ -141,3 +141,11 @@ body[data-route="about"]{overflow:hidden}body[data-route="about"] .about-lab-fra
 
 /* Slightly reduce only the Gok selection image, preserving its center. */
 .knots .card-art.gok{transform:scale(.95);transform-origin:center center}
+
+/* Exhibition readability: small labels only. */
+@media(min-width:761px){
+.ki-label,.ki-steps li>span,.story-label,.story-principles h3 span{font-size:13px}
+.story-footer{font-size:12px}
+.ki-network .ki-reading{font-size:13px}
+.ki-network .ki-samples text{font-size:12px}
+}
